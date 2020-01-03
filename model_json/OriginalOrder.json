@@ -7,7 +7,7 @@
       "comment": "记录ID",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:36;index;",
+      "gorm_options": "size:36;index;comment:记录ID;",
       "binding_options": ""
     },
     {
@@ -15,7 +15,7 @@
       "comment": "订单编号",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:50;",
+      "gorm_options": "size:50;comment:订单编号;",
       "binding_options": ""
     },
     {
@@ -23,7 +23,7 @@
       "comment": "渠道订单编号",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:50;",
+      "gorm_options": "size:50;comment:渠道订单编号;",
       "binding_options": ""
     },
     {
@@ -31,7 +31,7 @@
       "comment": "订单创建时间",
       "struct_field_required": false,
       "struct_field_type": "time.Time",
-      "gorm_options": "type:timestamp;",
+      "gorm_options": "type:timestamp;comment:订单创建时间;",
       "binding_options": ""
     },
     {
@@ -39,7 +39,7 @@
       "comment": "订单交易对象",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:50;",
+      "gorm_options": "size:50;comment:订单交易对象;",
       "binding_options": ""
     },
     {
@@ -47,7 +47,7 @@
       "comment": "产品名称",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:50;",
+      "gorm_options": "size:50;comment:产品名称;",
       "binding_options": ""
     },
     {
@@ -55,7 +55,7 @@
       "comment": "产品规格",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:50;",
+      "gorm_options": "size:50;comment:产品规格;",
       "binding_options": ""
     },
     {
@@ -63,7 +63,7 @@
       "comment": "状态码",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:50;",
+      "gorm_options": "size:50;comment:状态码;",
       "binding_options": ""
     },
     {
@@ -71,7 +71,7 @@
       "comment": "状态名称",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:50;",
+      "gorm_options": "size:50;comment:状态名称;",
       "binding_options": ""
     },
     {
@@ -79,7 +79,7 @@
       "comment": "下单数量",
       "struct_field_required": false,
       "struct_field_type": "int",
-      "gorm_options": "",
+      "gorm_options": "comment:下单数量;",
       "binding_options": ""
     },
     {
@@ -87,7 +87,7 @@
       "comment": "产品图片",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:1024;",
+      "gorm_options": "size:1024;comment:产品图片;",
       "binding_options": ""
     },
     {
@@ -95,7 +95,7 @@
       "comment": "成交总价",
       "struct_field_required": false,
       "struct_field_type": "float64",
-      "gorm_options": "type:decimal(10,2);",
+      "gorm_options": "type:decimal(10,2);comment:成交总价;",
       "binding_options": ""
     },
     {
@@ -103,7 +103,7 @@
       "comment": "销售单价",
       "struct_field_required": false,
       "struct_field_type": "float64",
-      "gorm_options": "type:decimal(10,2);",
+      "gorm_options": "type:decimal(10,2);comment:销售单价;",
       "binding_options": ""
     },
     {
@@ -111,7 +111,7 @@
       "comment": "订单优惠",
       "struct_field_required": false,
       "struct_field_type": "float64",
-      "gorm_options": "type:decimal(10,2);",
+      "gorm_options": "type:decimal(10,2);comment:订单优惠;",
       "binding_options": ""
     },
     {
@@ -119,7 +119,7 @@
       "comment": "订单结束时间",
       "struct_field_required": false,
       "struct_field_type": "time.Time",
-      "gorm_options": "type:timestamp;",
+      "gorm_options": "type:timestamp;comment:订单结束时间;",
       "binding_options": ""
     },
     {
@@ -127,7 +127,7 @@
       "comment": "支付时间",
       "struct_field_required": false,
       "struct_field_type": "time.Time",
-      "gorm_options": "type:timestamp;",
+      "gorm_options": "type:timestamp;comment:支付时间;",
       "binding_options": ""
     },
     {
@@ -135,7 +135,7 @@
       "comment": "商品分类编码",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:50;",
+      "gorm_options": "size:50;comment:商品分类编码;",
       "binding_options": ""
     },
     {
@@ -143,7 +143,7 @@
       "comment": "商品分类名称",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:50;",
+      "gorm_options": "size:50;comment:商品分类名称;",
       "binding_options": ""
     },
     {
@@ -151,7 +151,7 @@
       "comment": "创建者",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:36;index;",
+      "gorm_options": "size:36;index;comment:创建者;",
       "binding_options": ""
     }
   ]

@@ -7,7 +7,7 @@
       "comment": "记录ID",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:36;index;",
+      "gorm_options": "size:36;index;comment:记录ID;",
       "binding_options": ""
     },
     {
@@ -15,7 +15,7 @@
       "comment": "供货商，1：蜂助手",
       "struct_field_required": true,
       "struct_field_type": "int",
-      "gorm_options": "",
+      "gorm_options": "comment:供货商，1：蜂助手;",
       "binding_options": ""
     },
     {
@@ -23,7 +23,7 @@
       "comment": "产品名称",
       "struct_field_required": true,
       "struct_field_type": "string",
-      "gorm_options": "size:50;",
+      "gorm_options": "size:50;comment:产品名称;",
       "binding_options": ""
     },
     {
@@ -31,7 +31,7 @@
       "comment": "商品类型，1:充值类，2:卡密类，3:实物类",
       "struct_field_required": true,
       "struct_field_type": "int",
-      "gorm_options": "",
+      "gorm_options": "comment:商品类型，1:充值类，2:卡密类，3:实物类;",
       "binding_options": ""
     },
     {
@@ -39,7 +39,7 @@
       "comment": "产品图片",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:255;",
+      "gorm_options": "size:255;comment:产品图片;",
       "binding_options": ""
     },
     {
@@ -47,7 +47,7 @@
       "comment": "产品详情",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:1024;",
+      "gorm_options": "size:1024;comment:产品详情;",
       "binding_options": ""
     },
     {
@@ -55,7 +55,7 @@
       "comment": "产品规格",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:50;",
+      "gorm_options": "size:50;comment:产品规格;",
       "binding_options": ""
     },
     {
@@ -63,7 +63,7 @@
       "comment": "产品规格编码",
       "struct_field_required": true,
       "struct_field_type": "string",
-      "gorm_options": "size:30;",
+      "gorm_options": "size:30;comment:产品规格编码;",
       "binding_options": ""
     },
     {
@@ -71,7 +71,7 @@
       "comment": "标准价",
       "struct_field_required": true,
       "struct_field_type": "float64",
-      "gorm_options": "type:decimal(10,2);",
+      "gorm_options": "type:decimal(10,2);comment:标准价;",
       "binding_options": ""
     },
     {
@@ -79,7 +79,7 @@
       "comment": "供货价",
       "struct_field_required": true,
       "struct_field_type": "float64",
-      "gorm_options": "type:decimal(10,2);",
+      "gorm_options": "type:decimal(10,2);comment:供货价;",
       "binding_options": ""
     },
     {
@@ -87,7 +87,7 @@
       "comment": "供货折扣",
       "struct_field_required": true,
       "struct_field_type": "float64",
-      "gorm_options": "type:decimal(10,2);",
+      "gorm_options": "type:decimal(10,2);comment:供货折扣;",
       "binding_options": ""
     },
     {
@@ -95,7 +95,7 @@
       "comment": "产品详细图片",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:1024;",
+      "gorm_options": "size:1024;comment:产品详细图片;",
       "binding_options": ""
     },
     {
@@ -103,7 +103,7 @@
       "comment": "状态(1:启用 2:停用)",
       "struct_field_required": true,
       "struct_field_type": "int",
-      "gorm_options": "",
+      "gorm_options": "comment:状态(1:启用 2:停用);",
       "binding_options": "max=2,min=1"
     },
     {
@@ -111,7 +111,7 @@
       "comment": "创建者",
       "struct_field_required": false,
       "struct_field_type": "string",
-      "gorm_options": "size:36;index;",
+      "gorm_options": "size:36;index;comment:创建者;",
       "binding_options": ""
     }
   ]

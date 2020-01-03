@@ -1,0 +1,159 @@
+{
+
+  "struct_name": "Sku",
+  "comment": "商品库，包括基础商品，代理创建的商品",
+  "fields": [
+    {
+      "struct_field_name": "RecordID",
+      "comment": "记录ID",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:36;index;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "OriginalProductID",
+      "comment": "原始供货商产品ID",
+      "struct_field_required": false,
+      "struct_field_type": "int",
+      "gorm_options": "",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "SupplierID",
+      "comment": "供货商ID, 1:蜂助手",
+      "struct_field_required": false,
+      "struct_field_type": "int",
+      "gorm_options": "",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "SkuCode",
+      "comment": "Sku编码",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:30;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "ProductName",
+      "comment": "产品名称",
+      "struct_field_required": true,
+      "struct_field_type": "string",
+      "gorm_options": "size:50;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "ProductPic",
+      "comment": "产品图片",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:255;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "Pics",
+      "comment": "产品详细图片",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:1024;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "SkuName",
+      "comment": "产品规格",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:50;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "SkuDetail",
+      "comment": "产品详情",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:1024;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "ReservePrice",
+      "comment": "底价",
+      "struct_field_required": true,
+      "struct_field_type": "float64",
+      "gorm_options": "type:decimal(10,2);",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "SuggestedPrice",
+      "comment": "建议售价",
+      "struct_field_required": false,
+      "struct_field_type": "float64",
+      "gorm_options": "type:decimal(10,2);",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "SellingPrice",
+      "comment": "代理售价",
+      "struct_field_required": false,
+      "struct_field_type": "float64",
+      "gorm_options": "type:decimal(10,2);",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "SecondaryAgentPrice",
+      "comment": "一级代理供货价",
+      "struct_field_required": false,
+      "struct_field_type": "float64",
+      "gorm_options": "type:decimal(10,2);",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "SrvType",
+      "comment": "商品类型，1:充值类，2:卡密类，3:实物类",
+      "struct_field_required": false,
+      "struct_field_type": "int",
+      "gorm_options": "",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "FirstAgent",
+      "comment": "一级代理",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:50;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "SecondaryAgent",
+      "comment": "二级代理",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:50;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "SkuType",
+      "comment": "sku类型，1:系统商品，2:一级代理商sku，3:二级代理商sku",
+      "struct_field_required": false,
+      "struct_field_type": "int",
+      "gorm_options": "",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "Status",
+      "comment": "状态(1:启用 2:停用)",
+      "struct_field_required": true,
+      "struct_field_type": "int",
+      "gorm_options": "",
+      "binding_options": "max=2,min=1"
+    },
+    {
+      "struct_field_name": "Creator",
+      "comment": "创建者",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:36;index;",
+      "binding_options": ""
+    }
+  ]
+}

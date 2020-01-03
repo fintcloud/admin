@@ -1,0 +1,158 @@
+{
+  "struct_name": "OriginalOrder",
+  "comment": "供货商产生的订单",
+  "fields": [
+    {
+      "struct_field_name": "RecordID",
+      "comment": "记录ID",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:36;index;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "OrderNo",
+      "comment": "订单编号",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:50;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "ChannelOrderNo",
+      "comment": "渠道订单编号",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:50;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "OrderCreateTime",
+      "comment": "订单创建时间",
+      "struct_field_required": false,
+      "struct_field_type": "time.Time",
+      "gorm_options": "type:timestamp;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "OrderTarget",
+      "comment": "订单交易对象",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:50;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "ProductName",
+      "comment": "产品名称",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:50;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "SkuName",
+      "comment": "产品规格",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:50;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "StatusCode",
+      "comment": "状态码",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:50;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "StatusName",
+      "comment": "状态名称",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:50;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "Num",
+      "comment": "下单数量",
+      "struct_field_required": false,
+      "struct_field_type": "int",
+      "gorm_options": "",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "PicUrl",
+      "comment": "产品图片",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:1024;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "DealPrice",
+      "comment": "成交总价",
+      "struct_field_required": false,
+      "struct_field_type": "float64",
+      "gorm_options": "type:decimal(10,2);",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "SalePrice",
+      "comment": "销售单价",
+      "struct_field_required": false,
+      "struct_field_type": "float64",
+      "gorm_options": "type:decimal(10,2);",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "CouponPrice",
+      "comment": "订单优惠",
+      "struct_field_required": false,
+      "struct_field_type": "float64",
+      "gorm_options": "type:decimal(10,2);",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "FinishTime",
+      "comment": "订单结束时间",
+      "struct_field_required": false,
+      "struct_field_type": "time.Time",
+      "gorm_options": "type:timestamp;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "PaidTime",
+      "comment": "支付时间",
+      "struct_field_required": false,
+      "struct_field_type": "time.Time",
+      "gorm_options": "type:timestamp;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "EntityTypeCode",
+      "comment": "商品分类编码",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:50;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "EntityTypeName",
+      "comment": "商品分类名称",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:50;",
+      "binding_options": ""
+    },
+    {
+      "struct_field_name": "Creator",
+      "comment": "创建者",
+      "struct_field_required": false,
+      "struct_field_type": "string",
+      "gorm_options": "size:36;index;",
+      "binding_options": ""
+    }
+  ]
+}
